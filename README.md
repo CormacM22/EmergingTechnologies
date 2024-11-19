@@ -9,7 +9,7 @@ A jupyter notebook that builds and uses a third-order letter approximation model
 Follow these steps to run the program:
 
 - Clone this repository and open it in Visual Studio Code.
-- Cick the button, "run all", to run trigrams.ipynb.
+- Click the button, "run all", to run trigrams.ipynb.
 
 **References**
 
