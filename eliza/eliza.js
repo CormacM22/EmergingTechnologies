@@ -1,13 +1,22 @@
-
+// add multiple possible respones to the same keyword - Makes the converstation less repetitive.
 const responses = {
-    "hello": "Hello! How can I help you today?",
-    "hi": "Hi there! How are you feeling?",
-    "I am feeling": "Why do you say you are feeling that way?",
-    "my name is": "Nice to meet you! What's on your mind?",
-    "what": "Can you clarify your question?",
-    "how": "I'm here to help! Can you tell me more?",
-    "bye": "Goodbye! Take care."
+    "hello|hi|hey": [
+        "Hi there! How can I help?",
+        "Hello! What’s on your mind?",
+        "Hey! How are you feeling today?"
+    ],
+    "how are you": [
+        "I'm here to assist you. How are you?",
+        "I'm just a bot, but I'm doing great. How can I help you?",
+        "Feeling ready to chat! What's up?"
+    ],
+    "bye|goodbye": [
+        "Goodbye! Take care!",
+        "Bye! Hope to chat with you again soon!",
+        "See you later! Have a great day!"
+    ]
 };
+
 
 
 function processUserInput() {
