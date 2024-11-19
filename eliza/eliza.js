@@ -1,4 +1,4 @@
-// add multiple possible respones to the same keyword - Makes the converstation less repetitive.
+// add multiple possible respones to the same keyword - Makes the converstation less repetitive
 const responses = {
     "hello|hi|hey": [
         "Hi there! How can I help?",
@@ -18,23 +18,25 @@ const responses = {
 };
 
 
-
+// response logic randomly selects one of the options
 function processUserInput() {
     const userInput = document.getElementById("user-input").value.toLowerCase();
-    document.getElementById("user-input").value = ""; // Clear the input field
+    document.getElementById("user-input").value = "";
 
-    // Default response if no keywords match
     let response = "I'm not sure I understand. Can you tell me more?";
-    for (let keyword in responses) {
-        if (userInput.includes(keyword)) {
-            response = responses[keyword];
+    
+    for (let pattern in responses) {
+        const regex = new RegExp(pattern, "i");
+        if (regex.test(userInput)) {
+            const possibleResponses = responses[pattern];
+            response = possibleResponses[Math.floor(Math.random() * possibleResponses.length)];
             break;
         }
     }
 
-
     const chatDisplay = document.getElementById("chat-display");
     chatDisplay.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
     chatDisplay.innerHTML += `<p><strong>ELIZA:</strong> ${response}</p>`;
-    chatDisplay.scrollTop = chatDisplay.scrollHeight;  // Auto-scroll to the latest message
+    chatDisplay.scrollTop = chatDisplay.scrollHeight;
 }
+
