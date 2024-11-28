@@ -32,6 +32,12 @@ The Eliza chatbot takes in user input and responds with an appropriate message.
 
 You can find my version of the Eliza Chatbot on GitHub Pages by following the link - https://cormacm22.github.io/EmergingTechnologies/
 
+**References**
+
+Regex - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+Math.random() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+Responses - https://github.com/ianmcloughlin/2425_emerging_technologies/blob/main/03_eliza.ipynb
+
 
 
 
