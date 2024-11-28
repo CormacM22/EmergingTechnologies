@@ -8,10 +8,11 @@
 </head>
 <body>
     <div class="chat-container">
-        <h2>ELIZA Chatbot</h2>
         <div id="chat-display" class="chat-display"></div>
-        <input type="text" id="user-input" placeholder="Type your message here..." />
-        <button onclick="processUserInput()">Send</button>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <button onclick="processUserInput()">Send</button>
+        </div>
     </div>
     <script src="eliza.js"></script>
 </body>
