@@ -110,3 +110,24 @@ button:active {
 .chat-display {
     scroll-behavior: smooth;
 }
+
+.chat-header {
+    text-align: center;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.chat-header p {
+    font-size: 14px;
+    margin: 0;
+    font-style: italic;
+    opacity: 0.9; /* Slightly lighter for contrast */
+}
