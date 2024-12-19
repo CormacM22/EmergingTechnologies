@@ -4,12 +4,18 @@ This repository contains a Trigrams Notebook and an ELIZA Chatbot.
 
 ## Trigrams
 
-A jupyter notebook that builds and uses a third-order letter approximation model based on trigrams. It analyses English texts that I obtained from Project  Gutenberg.
+The Trigrams Notebook demonstrates a third-order letter approximation model based on trigrams. It analyzes English texts sourced from Project Gutenberg. Trigrams are sequences of three consecutive characters and are used to predict text by modeling character relationships.
 
-Follow these steps to run the program:
+## Steps to Run:
 
-- Clone this repository and open it in Visual Studio Code.
-- Click the button, "run all", to run trigrams.ipynb.
+1. Clone this repository.
+2. Open the repository in Visual Studio Code (or your preferred IDE).
+3. Open trigrams.ipynb.
+4. Click the button, "run all", to run trigrams.ipynb.
+
+## Features
+- Builds a trigram model for character-level prediction.
+- Processes English text to generate probabilistic character sequences.
 
 **References**
 
@@ -30,13 +36,26 @@ My own version of the Eliza chatbot, built with JavaScript, HTML and CSS and dep
 
 The Eliza chatbot takes in user input and responds with an appropriate message.
 
-You can find my version of the Eliza Chatbot on GitHub Pages by following the link - https://cormacm22.github.io/EmergingTechnologies/
+## Key Features
+
+- User input reflection for a natural conversational experience.
+- Randomized responses for variety.
+- Deployed and accessible online.
+
+## How to Use
+
+1. Access the Eliza Chatbot on GitHub Pages: https://cormacm22.github.io/EmergingTechnologies/
+2. Type your message in the input box and press Enter.
+3. Engage in a conversation with ELIZA!
+
 
 **References**
 
+- Eliza - https://web.njit.edu/~ronkowit/eliza.html
 - Regex - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
 - Math.random() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 - Responses - https://github.com/ianmcloughlin/2425_emerging_technologies/blob/main/03_eliza.ipynb
+
 
 
 
